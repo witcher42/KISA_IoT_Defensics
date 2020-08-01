@@ -20,4 +20,13 @@
 - Composition 분석 : 오픈소스  
   - 소스코드 바이너리 스캔하여 지문추출(시그니처)  
   - 사용된 component/library 취약점 확인  
+# Security Development Lifecycle  
+__커버리지 테스트 Acceptance Test --> 퍼징 테스트, 침투 테스트 Anomaly Test__  
+- __국방 무기체계 S/W 신뢰성 시험__
+  - Coverity : 정적  
+  - PT-10 : 동적  
+- __Attack Surface__
+  - 802.11, BLE, CSS, X.509, ...  
+![title](srcs/anomaly.png)  
 - 
+
