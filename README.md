@@ -11,7 +11,7 @@
 |강건성 중요|시스템 무결성 중요|
 -     QA문제가 보안문제가 된다  
 -     CIA팩터를 체크하는 퍼징 테스트!  
-> __Communication Robustness Test__ : UL2900, ULCAP  
+__Communication Robustness Test__ : UL2900, ULCAP  
 
 ![title](srcs/paradigm_shift.png)  
 - __다양한 경로로 유입 --> 단일도구로는 대응이 어려움__  
@@ -30,4 +30,31 @@ __커버리지 테스트 Acceptance Test --> 퍼징 테스트, 침투 테스트 
 -----
 ![title](srcs/anomaly_sent.png)  
 - 
+||Positive Test|Negative Test|
+|:--:|:--:|:--:|
+|Coverage|유한|무한|
+||정상입력|비정상입력|
+||Unit Test|Random Test|
+||Compliance Test|Fuzz Test|
+||Function Test|Penetrate Test|
+|(ex)|Age 99|Age 1=1|
 
+- __Input Anomalies__
+  - Field Level : Length, Type, Version 등의 필드. Overflow 
+  - Structural   Underflow, Repetition  
+  - Sequence Level : 센서에서 보내는 것에 대한 reponse를 omitting 또는 spamming  
+    -     Underflow : 일부요소를 빼거나 비완성된 테스트케이스로 시스템 오동작 일으킴 
+    -     Overflow : 메모리릭 등으로 시스템 오동작
+- __Expose Vulnerabilities__
+  - Trashing  
+  
+|by method|Mutation(Random Fuzzer)|Generation|
+|:--:|:--:|:--:|
+|Test Case 생성|Random|퍼저가 자체생산, Logic 가짐|
+|범위|범용적|특정 프로토콜|
+|성격|x Intelligence|o Intelligence|
+
+|Pump Random Bits at a Port(현실적)|Transient(과도기)|Knows Every Protocols(이상적)|
+|:--:|:--:|:--:|
+|프로토콜에 대한 지식 전무|캡쳐떠서 anomaly 추가|Test Case Leaks like Real Messages|
+|침팬지가 세익스피어 희곡 쓸 확률|세션ID를 고려못함(버려버림)|정상적인 통신이라 착각|
