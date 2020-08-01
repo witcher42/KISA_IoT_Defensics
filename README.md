@@ -27,6 +27,7 @@ __커버리지 테스트 Acceptance Test --> 퍼징 테스트, 침투 테스트 
   - PT-10 : 동적  
 - __Attack Surface__
   - 802.11, BLE, CSS, X.509, ...  
-![title](srcs/anomaly.png)  
+
+![title](srcs/anomaly_sent.png)  
 - 
 
