@@ -7,7 +7,7 @@
 
 |과거|현재|
 |:--:|:--:|
-|QA부서|Sec부서|
+|QA부서|Security부서|
 |강건성 중요|시스템 무결성 중요|
 -     QA문제가 보안문제가 된다  
 -     CIA팩터를 체크하는 퍼징 테스트!  
@@ -81,6 +81,6 @@ __커버리지 테스트 Acceptance Test --> 퍼징 테스트, 침투 테스트 
 # Defensics의 글로벌 사례
   - GM은 납품을 하는 Tier1에게 Defensics Fuzzing Test 리포트를 요구하고 있음
   - 2014 HeartBleed 취약점을 Defensics TLS Test Suite로 발견
-  - 2017 CVE 2420 Apple memory Corruption
+  - 2017 CVE-2420 Apple memory Corruption
 
 
