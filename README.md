@@ -54,9 +54,26 @@ __커버리지 테스트 Acceptance Test --> 퍼징 테스트, 침투 테스트 
 |범위|범용적|특정 프로토콜|
 |성격|x   Intelligence|o   Intelligence|
 
+- Fuzzer 평가 요소
+  -     Unique Crashes
+  -     Testing Time
+  -     Code Coverage
+
+# 퍼징이 어려운 이유?  
+- __Infinite Malformed Inputs__
+- __Finite Testing Time__
+- 임시책 <Picking Values>
+  - Boundary Condition
+  - Session Awareness
+
 |Pump Random Bits at a Port(현실적)|Transient(과도기)|Knows Every Protocols(이상적)|
 |:--:|:--:|:--:|
 |프로토콜에 대한 지식 전무|캡쳐떠서 anomaly 추가|Test Case Leaks like Real Messages|
 |침팬지가 세익스피어 희곡 쓸 확률|세션ID를 고려못함(버려버림)|정상적인 통신이라 착각|
+
+- Defensics의 글로벌 사례
+  - GM은 납품을 하는 Tier1에게 Defensics Fuzzing Test 리포트를 요구하고 있음
+  - 2014 HeartBleed 취약점을 Defensics TLS Test Suite로 발견
+  - 2017 CVE 2420 Apple memory Corruption
 
 
