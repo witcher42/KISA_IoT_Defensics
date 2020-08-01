@@ -13,7 +13,7 @@
 -     CIA팩터를 체크하는 퍼징 테스트!  
 > __Communication Robustness Test__ : UL2900, ULCAP  
 
-![title](srcs/네트워크_클러스터링.png)  
+![title](srcs/paradigm_shift.png)  
 - __다양한 경로로 유입 --> 단일도구로는 대응이 어려움__  
 - 정적분석 : 코드분석, 코딩실행이 없음, 상대적으로 저렴  
 - 동적분석 : 퍼징
